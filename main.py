@@ -1,12 +1,12 @@
-# Imports
+# Tensorflow Import
 import tensorflow as tf
 
-# Object detection imports
+# Various Object detection imports
 from utils import backbone
 from api import object_counting_api
 
 if tf.__version__ < '1.4.0':
-  raise ImportError('Please upgrade your tensorflow installation to v1.4.* or later!')
+  raise ImportError('Please upgrade your tensorflow installation >1.4')
 
 input_video = 1
 
